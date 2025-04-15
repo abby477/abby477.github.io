@@ -1,62 +1,109 @@
-<!DOCTYPE html>
-<html>
+<!Doctype html>
+
+<html lang="zh-TW">
 <head>
-<title>唐詩三百首</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
-<style>
-.iansui-regular-0318 {
-  font-family: "Iansui", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.iansui-regular-caption {
-  font-family: "Iansui", cursive;
-  font-weight: 900;
-  font-style: normal;
-  color:#646f58;
-}
+    <title>Abby's WEBSITE</title>
+    <!--引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--引入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
+    <style>
 
-.iansui-regular-maintain {
-  font-family: "Iansui", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color:#646f58;
+    
+    .iansui-regular-caption {
+      font-family: "Iansui", cursive;
+      font-weight: 900;
+      font-style: normal;
+      color:#646f58;
+    }
+    
+    .iansui-regular-maintain {
+      font-family: "Iansui", cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#646f58;
+    
+    }
+    </style>
 
-}
-</style>
 
-</head>
+  </head>
+  <body class=".iansui-regular-maintain">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    <!--LOGO-->
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--導覽列內容-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-<body align="center">
 
-    <div>
-
-        <div id="mycard">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Oa_RSwwpPaA?si=wsEuayawCLLpcPWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--content-->
+    <div class="container">
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.youtube.com/embed/Oa_RSwwpPaA?si=wsEuayawCLLpcPWy" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Benson Boone - Beautiful Things</h5>
+          <p class="card-text">For a while there it was rough 
+            But lately I’ve been doing better 
+            Than the last four cold Decembers
+            ......(more)</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
         
+    </div>
 
-        </div>
 
-        <div id="caption" class='iansui-regular-caption'>
-            <h1>Benson Boone - Beautiful Things</h1>
-
-        </div>
-
-        <div id="maincontent" class='iansui-regular-maintain'>
-            <pre>
-                For a while there it was rough 
-                But lately I’ve been doing better 
-                Than the last four cold Decembers
-                ......(more)
-            </pre>
-
-        </div>
+   
+    <!--footer-->
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <div class="text-center p-4" style="background-color:rgba(0, 0, 0, 0.05);">
+                Footer:
+                <a class="text-reset font-weight">Abby</a>
+            </div>
+        </footer>
+       
 
 
     </div>
-</body>
-
+  </body>
 </html>
