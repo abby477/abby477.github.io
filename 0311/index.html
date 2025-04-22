@@ -1,65 +1,112 @@
+<!Doctype html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-======================================================================
-<!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-<title>唐詩三百首</title>
-</head>
 
-<body align="center">
+    <title>Abby's WEBSITE</title>
+    <!--引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--引入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
+    <style>
 
-    <img src="img/mountain.jpg" width="300">
-
-    <h1>山石 韓愈</h1>
-
-    <p>山 石 犖 确 行 徑 微 ， 黃 昏 到 寺 蝙 蝠 飛 。<br>
-        升 堂 坐 階 新 雨 足 ， 芭 蕉 葉 大 梔 子 肥 。<br>
-        僧 言 古 壁 佛 畫 好 ， 以 火 來 照 所 見 稀 。<br>
-        鋪 床 拂 席 置 羹 飯 ， 疏 糲 亦 足 飽 我 飢 。<br>
-        夜 深 靜 臥 百 蟲 絕 ， 清 月 出 嶺 光 入 扉 。<br>
-        天 明 獨 去 無 道 路 ， 出 入 高 下 窮 煙 霏 。<br>
-        山 紅 澗 碧 紛 爛 熳 ， 時 見 松 櫪 皆 十 圍 。<br>
-        當 流 赤 足 踏 澗 石 ， 水 聲 激 激 風 生 衣 。<br>
-        人 生 如 此 自 可 樂 ， 豈 必 局 促 為 人 鞿 。<br>
-        嗟 哉 吾 黨 二 三 子 ， 安 得 至 老 不 更 歸 。<br>
-    </p>
     
-</body>
+    .iansui-regular-caption {
+      font-family: "Iansui", cursive;
+      font-weight: 900;
+      font-style: normal;
+      color:#646f58;
+    }
+    
+    .iansui-regular-maintain {
+      font-family: "Iansui", cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#646f58;
+    
+    }
+    </style>
 
+
+  </head>
+  <body class=".iansui-regular-maintain">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    <!--LOGO-->
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--導覽列內容-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--content-->
+    <div class="container">
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/mountain.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">山石 韓愈</h5>
+              <p class="card-text">
+                山 石 犖 确 行 徑 微 ， 黃 昏 到 寺 蝙 蝠 飛 。
+                ...
+    
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        
+    </div>
+
+
+   
+    <!--footer-->
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <div class="text-center p-4" style="background-color:rgba(0, 0, 0, 0.05);">
+                Footer:
+                <a class="text-reset font-weight">Abby</a>
+            </div>
+        </footer>
+       
+
+
+    </div>
+  </body>
 </html>
+
+
