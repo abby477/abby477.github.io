@@ -1,104 +1,199 @@
+<!Doctype html>
 
-
-=============================================================
-<!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
-    <title>ABBY'S WEBSITE</title>
+
+    <title>Abby's WEBSITE</title>
+    <!--引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <!--引入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
+    <style>
+        .iansui-regular-caption {
+            font-family: "Iansui", cursive;
+            font-weight: 900;
+            font-style: normal;
+            color: #646f58;
+        }
+
+        .iansui-regular-maintain {
+            font-family: "Iansui", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: #646f58;
+
+        }
+        .iansui-regular-black {
+            font-family: "Iansui", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: #3D3B30;
+        }
+    </style>
+
+
 </head>
 
-<body>
-    <div class="row">
-        <div class="col">
-            <div id="mycard">
-                <img src="img/溫馨.jpg" width="300">
-            </div>
-
-            <div id="caption" class='iansui-regular-caption'>
-                <h1>2025/2/25 Hi! This is Abby's hpmepage</h1>
-            </div>
-
-            <div id="maincontent" class='iansui-regular-maintain'>
-                <p><a
-                        href="https://sites.google.com/stu.ntue.edu.tw/abby">https://sites.google.com/stu.ntue.edu.tw/abby</a>
-                </p>
+<body class=".iansui-regular-maintain">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!--LOGO-->
+            <img src="img/dog.jpg" width=50 href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--導覽列內容-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://sites.google.com/stu.ntue.edu.tw/abby">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Homework
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="0304\index.html">0304</a></li>
+                            <li><a class="dropdown-item" href="0311\index.html">0311</a></li>
+                            <li><a class="dropdown-item" href="0318\index.html">0318</a></li>
+                            <li><a class="dropdown-item" href="0325\index.html">0325</a></li>
+                            <li><a class="dropdown-item" href="0422\index.html">0422</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-        <div class="col">
-            <div id="mycard">
-                <img src="img/詐騙.jpg" width="300">
-
-            </div>
-
-            <div id="caption" class='iansui-regular-caption'>
-                <h1>2025/3/4 這是詐騙</h1>
-
-            </div>
-
-            <div id="maincontent" class='iansui-regular-maintain'>
-                <p><a href="0304\index.html">abby477.github.io\0304</a></p>
-
-            </div>
+    </nav>
 
 
-        </div>
-        <!--3-->
-    </div>
-    <div class="container text-center">
+    <!--content-->
+    <div class="container">
+        <!--2-->
         <div class="row">
             <div class="col">
                 <div id="mycard">
-                    <img src="img/韓愈.jpg" width="300">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/詐騙.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="iansui-regular-caption">0304詐騙</h5>
+                            <p class="iansui-regular-black">
+                               連結到另一個頁面
+                            </p>
+                            <a href="0304\index.html" class="btn btn-primary">Go somewhere</a>
+                        </div>
 
-                </div>
-
-                <div id="caption" class='iansui-regular-caption'>
-                    <h1>2025/3/11 這是韓愈 山石</h1>
-
-                </div>
-
-                <div id="maincontent" class='iansui-regular-maintain'>
-                    <p><a href="0311\index.html">abby477.github.io\0311</a></p>
-
-                </div>
-            </div>
-            <div class="col">
-                <div id="mycard">
-                    <img src="img/聽歌.jpg" width="300">
-
-                </div>
-
-                <div id="caption" class='iansui-regular-caption'>
-                    <h1>2025/3/18 想聽歌嗎?</h1>
-
-                </div>
-
-                <div id="maincontent" class='iansui-regular-maintain'>
-                    <p><a href="0318\index.html">abby477.github.io\0318</a></p>
-
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div id="mycard">
-                    <img src="img/私塾.jpg" width="300">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/韓愈.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="iansui-regular-caption">0311韓愈 山石</h5>
+                            <p class="iansui-regular-black">
+                                君 自 故 鄉 來 ， 　應 知 故 鄉 事 。
+                                來 日 綺 窗 前 ， 　寒 梅 著 花 未 ？
 
-                </div>
+                            </p>
+                            <a href="0311\index.html" class="btn btn-primary">Go somewhere</a>
+                        </div>
 
-                <div id="caption" class='iansui-regular-caption'>
-                    <h1>2025/3/25 唐詩五首</h1>
-
-                </div>
-
-                <div id="maincontent" class='iansui-regular-maintain'>
-                    <p><a href="0325\index.html">abby477.github.io\0325</a></p>
-
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
+
+        <!--3-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div id="mycard">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/聽歌.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="iansui-regular-caption">0318 聽歌</h5>
+                                <p class="iansui-regular-black">
+                                    空 山 不 見 人 ， 　但 聞 人 語 響 。
+                                    返 景 入 深 林 ， 　復 照 青 苔 上 。</p>
+                                <a href="0318\index.html" class="btn btn-primary">Go somewhere</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycard">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/私塾.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5  class="iansui-regular-caption">0325 唐詩五首</h5>
+                                <p class="iansui-regular-black">
+                                    床 前 明 月 光 ， 　疑 是 地 上 霜 。
+                                    舉 頭 望 明 月 ， 　低 頭 思 故 鄉 。</p>
+                                <a href="0318\index.htm " class="btn btn-primary">Go somewhere</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycard">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/怨情.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="iansui-regular-caption">0422 排版</h5>
+                                <p class="iansui-regular-black">
+                                    文字、圖片、序列的練習</p>
+                                <a href="0422\index.html" class="btn btn-primary">Go somewhere</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
+
+            <!--footer-->
+            <div>
+                <footer class="text-center text-lg-start bg-light text-muted">
+                    <div class="text-center p-4" style="background-color:rgba(0, 0, 0, 0.05);">
+                        Footer:
+                        <a class="text-reset font-weight">Abby</a>
+                    </div>
+                </footer>
+
+
+
+            </div>
 </body>
 
 </html>
